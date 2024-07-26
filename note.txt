@@ -1,0 +1,17 @@
+Must do
+Binary Search
+https://leetcode.com/problems/minimum-time-to-repair-cars/ <-- this one is gold!!!
+https://leetcode.com/problems/minimum-speed-to-arrive-on-time/
+https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
+https://leetcode.com/problems/koko-eating-bananas/
+https://leetcode.com/problems/maximum-candies-allocated-to-k-children/
+https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/
+https://leetcode.com/problems/sell-diminishing-valued-colored-balls/
+https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/
+https://leetcode.com/problems/divide-chocolate/ 
+
+subarray
+----> watch similar question https://leetcode.com/problems/subarray-sum-equals-k/description/
+
+// all patterns here
+https://leetcode.com/discuss/study-guide/3611301/Complete-System-Design-Case-Studies-%3A-Bookmark-it
