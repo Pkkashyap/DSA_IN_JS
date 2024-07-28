@@ -35,6 +35,25 @@ const bfs = (list, s) => {
   }
 };
 
+const bfs_disconnected = (list, visited, s) => {
+  const queue = [];
+  visited[s] = true;
+  queue.push(s);
+  let ans = [];
+  while (queue.length != 0) {
+    const poped = queue.shift();
+    ans.push(poped);
+    for (let i of list[poped]) {
+      if (!visited[i]) {
+        visited[i] = true;
+        queue.push(i);
+      }
+    }
+  }
+
+  console.log(ans.join("->"));
+};
+
 const check = () => {
   let list = [];
   addEdge(list, 0, 1);
@@ -49,4 +68,28 @@ const check = () => {
   bfs(list, 0);
 };
 
-check();
+const check_disconnected = () => {
+  let list = [];
+  addEdge(list, 0, 1);
+  addEdge(list, 0, 2);
+  addEdge(list, 1, 3);
+  addEdge(list, 2, 3);
+
+  addEdge(list, 4, 5);
+  addEdge(list, 4, 7);
+  addEdge(list, 5, 6);
+  addEdge(list, 6, 7);
+  addEdge(list, 8, 9);
+  console.log(list);
+  let visited = new Array(10).fill(false);
+  let count = 0;
+  for (let i = 0; i < visited.length; i++) {
+    if (!visited[i]) {
+      bfs_disconnected(list, visited, i);
+      count++;
+    }
+  }
+  console.log("no of island", count);
+};
+
+check_disconnected();
